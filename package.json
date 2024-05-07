@@ -1,0 +1,22 @@
+{
+  "name": "drizzle-repro",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "query:bun": "bun ./bun-sqlite/query.ts",
+    "query:bs3": "bunx tsx ./better-sqlite3/query.ts"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.10",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "drizzle-orm": "^0.30.10",
+    "nanoid": "^5.0.7",
+    "tsx": "^4.9.3"
+  }
+}
