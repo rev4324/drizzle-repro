@@ -6,10 +6,5 @@ export const rawDb = new Database("./db.sqlite");
 
 export const betterSqlite3Db = drizzle(rawDb, {
   schema,
-  logger:
-    process.env.NODE_ENV === "development"
-      ? {
-          logQuery: (query, params) => console.log({ query, params }),
-        }
-      : undefined,
+  logger: true,
 });
